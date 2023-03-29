@@ -1,0 +1,19 @@
+>{
+  "id":"testId",
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"0123456789",
+  "emailAddress":"johndoe@gmail.com",
+  "updated":"2021-07-12 12:00:00"
+}
+${
+  "id":"testId",
+  "name":"John C Doe",
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"0123456789",
+  "emailAddress":"johndoe@gmail.com",
+  "updated":"2021-07-12 12:00:00"
+}

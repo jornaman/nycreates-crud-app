@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Students</title>
+</head>
+<body>
+<h1>Welcome to the Students Page</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Email Address</td>
+    <td>Phone Number</td>
+  </tr>
+  <tr th:each="student: ${student}">
+    <td th:text="${student.name}">Student Name</td>
+    <td th:text="${student.emailAddress}">Student Email</td>
+    <td th:text="${student.phoneNumber}">Student Phone Number</td>
+  </tr>
+</table>
+
+</body>
+</html>

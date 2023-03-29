@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<h1>Edit Student Page</h1>
+
+<div>
+    <form action="#" th:action="@{/student/update/8367294aea27}" method="put" th:object="${student}">
+        <label>First name:</label>
+        <input type="text" value="Stella" th:value="Stella" th:field="*{student.firstName}" /><br />
+
+        <label>Middle name:</label>
+        <input type="text" value="" th:value="" th:field="*{student.middleName}" /><br />
+
+        <label>Last name:</label>
+        <input type="text" value="Dixon" th:value="Dixon" th:field="*{student.lastName}" /><br />
+
+        <label>Email address:</label>
+        <input type="text" value="sdixon@yahoo.com" th:value="sdixon@yahoo.com" th:field="*{student.emailAddress}" /><br />
+
+        <label>Phone number:</label>
+        <input type="text" value="352-233-2164" th:value="3522332164" th:field="*{student.phoneNumber}" /><br />
+
+        <label>&nbsp;</label>
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+</body>
+
+</html>

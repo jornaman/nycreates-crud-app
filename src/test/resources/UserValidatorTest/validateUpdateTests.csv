@@ -1,0 +1,43 @@
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"test",
+  "emailAddress":"johndoe@gmail.com"
+}$false
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"abc123def",
+  "emailAddress":"johndoe@gmail.com"
+}$false
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"123",
+  "emailAddress":"johndoe@gmail.com"
+}$false
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"12345678910",
+  "emailAddress":"johndoe@gmail.com"
+}$false
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":null,
+  "emailAddress":"johndoe@gmail.com"
+}$true
+>{
+  "firstName":"John",
+  "middleName":"C",
+  "lastName":"Doe",
+  "phoneNumber":"0123456789",
+  "emailAddress":"johndoe@gmail.com"
+}$true
+

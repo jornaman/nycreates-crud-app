@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <style type="text/css">
+        label {
+            display: inline-block;
+            width: 200px;
+            margin: 5px;
+            text-align: left;
+        }
+        input[type=text], input[type=password], select {
+            display: inline-block;
+            width: 200px;
+        }
+        input[type=radio] {
+            margin-left: 45px;
+        }
+        input[type=checkbox] {
+            margin-right: 190px;
+        }
+        button {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Welcome to the Student View Page</h1>
+
+<div align="center">
+    <h1>Student</h1>
+    <form action="#" th:action="@{/students}" method="post" th:object="${student}">
+        <label>First name:</label>
+        <input type="text" th:field="*{firstName}" /><br/>
+
+        <label>Middle name:</label>
+        <input type="text" th:field="*{middleName}" /><br/>
+
+        <label>Last name:</label>
+        <input type="text" th:field="*{lastName}" /><br/>
+
+        <label>Email address:</label>
+        <input type="text" th:field="*{emailAddress}" /><br/>
+
+        <label>Phone number:</label>
+        <input type="text" th:field="*{phoneNumber}" /><br/>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+
+</html>
