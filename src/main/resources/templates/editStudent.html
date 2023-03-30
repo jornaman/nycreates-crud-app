@@ -11,7 +11,7 @@
 <h1>Edit Student Page</h1>
 
 <div>
-    <form action="#" th:action="@{/student/update/8367294aea27}" method="put" th:object="${student}">
+    <form action="#" th:action="@{/student/update/8367294aea27}" method="patch" th:object="${student}">
         <label>First name:</label>
         <input type="text" value="Stella" th:value="Stella" th:field="*{student.firstName}" /><br />
 
